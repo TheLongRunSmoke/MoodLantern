@@ -1,5 +1,5 @@
 [DebugChecksum]
-Checksum=370416016
+Checksum=99096297
 [Stack]
 FillEnabled=0
 OverflowWarningsEnabled=1
@@ -49,6 +49,16 @@ ActionState=1
 [Trace1]
 Enabled=0
 ShowSource=1
+[StackPlugin]
+Enabled=1
+OverflowWarningsEnabled=1
+WarningThreshold=90
+SpWarningsEnabled=1
+WarnHow=0
+UseTrigger=1
+TriggerName=main
+LimitSize=0
+ByteLimit=50
 [DataSample]
 LogEnabled=0
 GraphEnabled=0
