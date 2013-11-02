@@ -1,5 +1,6 @@
 
 #include "iostm8l152c6.h"
+#include "stdlib.h"
 
 #define STRINGVECTOR(x) #x
 #define ISR( a, b ) \
@@ -7,11 +8,11 @@
   __interrupt void (a)( void )
 
     unsigned int Count_flag = 1;
-    unsigned int PWM_R = 0xff;
-    unsigned int PWM_G = 0x80;
-    unsigned int PWM_B = 0x10;
     unsigned int T_Count = 0;
     unsigned int T_Flag = 0;
+    unsigned int H_Target = 0;
+    unsigned int Hn = 0;
+    unsigned int H = 0;
     
 ISR(TIM2_OVF, TIM2_OVR_UIF_vector)
 {
@@ -41,6 +42,7 @@ void Init( void )
   PB_CR1 = (1<<Red)|(1<<Blue)|(1<<Green);       //Включаю Push-Pull
   PB_ODR &= ~(1<<Red)|(1<<Blue)|(1<<Green);     //Устанавливаю выходы в 0
   
+  //Настройка таймеров.
   CLK_PCKENR1_bit.PCKEN10 = 1;   //Подаю тактирование на таймер TIM2
   CLK_PCKENR1_bit.PCKEN11 = 1;   //Подаю тактирование на таймер TIM3.
   TIM2_CR1_bit.URS = 1; //Прерывания только по переполнению счетчика.
@@ -63,13 +65,10 @@ void Init( void )
   TIM2_IER_bit.UIE = 1; //Разрешаю прерывания по переполнению для TIM2.
   TIM2_CR1_bit.CEN = 1; //Запускаю TIM2.
   TIM3_CR1_bit.CEN = 1; //Запускаю TIM3.
-  
   TIM2_ARRH = (255) >> 8;       //Устанавливаю верхнее значение для TIM2.
   TIM2_ARRL = (255) & 0xFF;
-  
   TIM3_ARRH = (255) >> 8;       //Устанавливаю верхнее значение для TIM3.
   TIM3_ARRL = (255) & 0xFF;
-  
 }
 
 void PWM( char Color, int Brightness )  //Эта фукция обеспечивает удобный доступ к PWM.
@@ -80,46 +79,92 @@ void PWM( char Color, int Brightness )  //Эта фукция обеспечивает удобный доступ
   case Red: {
               TIM3_CCR1H = ( Brightness ) >> 8;   //Красный канал.
               TIM3_CCR1L = ( Brightness ) & 0xFF;
+              break;
             }
   case Green: {
               TIM2_CCR2H = ( Brightness ) >> 8;   //Зеленный канал.
               TIM2_CCR2L = ( Brightness ) & 0xFF;
-            }
+              break;
+              }
   case Blue: {
               TIM2_CCR1H = ( Brightness ) >> 8;   //Синий канал.
               TIM2_CCR1L = ( Brightness ) & 0xFF;
-            }
+              break;
+             }
   default: ;
   }
   asm( "rim" );
 }
 
+void HSV2RGB( int Hue )
+{
+  switch ( (Hue - ( Hue % 255 )) / 255 )
+      {
+      case 0: {
+                PWM( Red, ( 255 - ( Hue % 255 ) ) );
+                PWM( Green, Hue);
+                PWM( Blue, 0x00 );
+                break;
+              }
+      case 1: {
+                PWM( Red, 0x00 );
+                PWM( Green, ( 255 - ( Hue % 255 ) ) );
+                PWM( Blue,  ( Hue - 255 ) );
+                break;
+              }
+      case 2: {
+                PWM( Red, ( Hue - 510 ) );
+                PWM( Green, 0x00 );
+                PWM( Blue, ( 255 - ( Hue % 255 ) ) );
+                break;
+              }
+      default: ;
+      }
+}
+
 void main( void )
 {
   Init();
-  
-  //asm( "rim" );         //Разрешаю прерывания.
-  
-  /*TIM2_CCR1H = ( PWM_B ) >> 8;       //Устанавливаю значение для PWM.
-  TIM2_CCR1L = ( PWM_B ) & 0xFF;
-  
-  TIM2_CCR2H = ( PWM_G ) >> 8;       //Устанавливаю значение для PWM.
-  TIM2_CCR2L = ( PWM_G ) & 0xFF;
-  
-  TIM3_CCR1H = ( PWM_R ) >> 8;       //Устанавливаю значение для PWM.
-  TIM3_CCR1L = ( PWM_R ) & 0xFF;*/
-  
-  PWM( Red, 0x80 );
-  PWM( Green, 0xff );
-  PWM( Blue, 0x10 );
+  PWM( Red, 0x00);
+  PWM( Green, 0x00);
+  PWM( Blue, 0x00);
   
   asm( "rim" );         //Разрешаю прерывания.
   
+  srand( NULL );
+  
+  H = rand() % 766;
+  HSV2RGB( H );
+  
   while (1)
   {
-    if ( T_Flag == 1 ) { PWM_B = ~PWM_B; T_Flag = 0; }
-    
-    PWM( Blue, PWM_B );
+    if ( T_Flag == 1 ) 
+    {
+            
+      if ( H == H_Target ) 
+      {
+        srand(H);     //TODO: сделать скидывание мусора из младших битов АЦП.
+        Hn = 85 + rand() % 596 ; //Беру случайный тон.
+        if ( H_Target + Hn < 766 )
+         {
+           H_Target = H_Target + Hn;
+         } 
+        else 
+        { 
+          H_Target = H_Target + Hn - 765; 
+        }
+      }
+      else
+      {
+      if ( H < H_Target)
+      {
+      HSV2RGB( H );
+      if ( H
+      H--;
+      }
+      
+      T_Flag = 0;
+    }
     
   }
 }
