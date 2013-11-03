@@ -7,63 +7,63 @@
     <name>Debug</name>
     <outputs>
       <file>$PROJ_DIR$\main.c</file>
-      <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
-      <file>$TOOLKIT_DIR$\lib\dlstm8smn.a</file>
-      <file>$PROJ_DIR$\Debug\Exe\templproj.out</file>
-      <file>$TOOLKIT_DIR$\inc\iostm8l152c6.h</file>
-      <file>$TOOLKIT_DIR$\config\lnkstm8l152c6.icf</file>
-      <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.o</file>
       <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
       <file>$TOOLKIT_DIR$\inc\c\DLib_Threads.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\xencoding_limits.h</file>
+      <file>$TOOLKIT_DIR$\inc\iostm8l152c6.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
       <file>$TOOLKIT_DIR$\lib\dlstm8smn.h</file>
       <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
       <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
       <file>$TOOLKIT_DIR$\inc\io_macros.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\main.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
       <file>$PROJ_DIR$\Debug\Obj\RGB.pbd</file>
+      <file>$TOOLKIT_DIR$\config\lnkstm8l152c6.icf</file>
+      <file>$TOOLKIT_DIR$\lib\dlstm8smn.a</file>
       <file>$TOOLKIT_DIR$\lib\dbgstm8smd.a</file>
+      <file>$TOOLKIT_DIR$\inc\c\xencoding_limits.h</file>
+      <file>$PROJ_DIR$\Debug\Exe\templproj.out</file>
     </outputs>
-    <file>
-      <name>[ROOT_NODE]</name>
-      <outputs>
-        <tool>
-          <name>ILINK</name>
-          <file> 3</file>
-        </tool>
-      </outputs>
-    </file>
     <file>
       <name>$PROJ_DIR$\main.c</name>
       <outputs>
         <tool>
           <name>ICCSTM8</name>
-          <file> 16</file>
+          <file> 1</file>
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 6</file>
+          <file> 10</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>ICCSTM8</name>
-          <file> 4 15 9 7 10 1 12 13 11 8 14</file>
+          <file> 4 9 11 2 12 5 6 7 17 3 8</file>
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 4 15 9 7 10 1 12 13 11 8 14</file>
+          <file> 4 9 11 2 12 5 6 7 17 3 8</file>
         </tool>
       </inputs>
+    </file>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 18</file>
+        </tool>
+      </outputs>
     </file>
     <file>
       <name>$PROJ_DIR$\Debug\Exe\templproj.out</name>
       <inputs>
         <tool>
           <name>ILINK</name>
-          <file> 5 16 2 18</file>
+          <file> 14 1 15 16</file>
         </tool>
       </inputs>
     </file>

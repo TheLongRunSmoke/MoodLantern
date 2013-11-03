@@ -13,11 +13,12 @@
     unsigned int H_Target = 0;
     unsigned int Hn = 0;
     unsigned int H = 0;
+    unsigned int Way = 0;
     
 ISR(TIM2_OVF, TIM2_OVR_UIF_vector)
 {
   
-  if ( T_Count <= 62745 ) 
+  if ( T_Count <= 1000 )  //62745 должно быть.
   { 
     T_Count++;
   } 
@@ -134,6 +135,7 @@ void main( void )
   srand( NULL );
   
   H = rand() % 766;
+  
   HSV2RGB( H );
   
   while (1)
@@ -143,6 +145,10 @@ void main( void )
             
       if ( H == H_Target ) 
       {
+        //PWM( Red, 0xff);        //Отладочная вспышка.
+        //PWM( Green, 0xff);
+        //PWM( Blue, 0xff);
+        
         srand(H);     //TODO: сделать скидывание мусора из младших битов АЦП.
         Hn = 85 + rand() % 596 ; //Беру случайный тон.
         if ( H_Target + Hn < 766 )
@@ -153,14 +159,20 @@ void main( void )
         { 
           H_Target = H_Target + Hn - 765; 
         }
+        Way = rand() % 2;
       }
       else
       {
-      if ( H < H_Target)
-      {
+      if ( Way == 0 )
+       {
+         if ( H != 765 ) { H++; } else { H = 0; }   
+       }
+      else
+       {
+         if ( H != 0 ) { H--; } else { H = 765;  }
+       }
+      
       HSV2RGB( H );
-      if ( H
-      H--;
       }
       
       T_Flag = 0;
