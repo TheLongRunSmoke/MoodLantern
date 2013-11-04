@@ -125,7 +125,7 @@ void HSV2RGB( int Hue )
 
 void main( void )
 {
-  Init();
+  Init();       //TODO: ѕридумать способ отследить выход SEPIC'а в режим.
   PWM( Red, 0x00);
   PWM( Green, 0x00);
   PWM( Blue, 0x00);
