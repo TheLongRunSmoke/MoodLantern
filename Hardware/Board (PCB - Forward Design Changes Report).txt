@@ -1,0 +1,18 @@
+Forward Design Changes Report
+-----------------------------
+
+Report File    : D:\GitHub\RGB\Hardware\Board (PCB - Forward Design Changes Report).txt
+Report Written : Thursday, November 14, 2013
+Project Path   : D:\GitHub\RGB\Hardware\Board.prj
+Design Path    : D:\GitHub\RGB\Hardware\Board.pcb
+Design Title   : 
+Created        : 14.11.2013 15:06:31
+Last Saved     : 14.11.2013 15:28:33
+Editing Time   : 22 min
+Units          : mm (precision 2)
+
+Renamed component reference "SWIM" to "SWIM".
+
+
+
+End Of Report.

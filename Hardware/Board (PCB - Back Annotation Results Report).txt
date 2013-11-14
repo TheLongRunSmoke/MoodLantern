@@ -1,0 +1,91 @@
+Back Annotation Results Report
+------------------------------
+
+Report File    : D:\GitHub\RGB\Hardware\Board (PCB - Back Annotation Results Report).txt
+Report Written : Thursday, November 14, 2013
+Project Path   : D:\GitHub\RGB\Hardware\Board.prj
+Design Path    : D:\GitHub\RGB\Hardware\Board.pcb
+Design Title   : 
+Created        : 14.11.2013 15:06:31
+Last Saved     : 14.11.2013 15:10:10
+Editing Time   : 3 min
+Units          : mm (precision 2)
+
+Back Annotate renames from the PCB design to all Schematic designs in project "Board".
+
+Change Value on Component 'C1' - 'Value'. - Schem v0.1
+Change Value on Component 'R1' - 'Value'. - Schem v0.1
+Change Value on Component 'L1' - 'Value'. - Schem v0.1
+Change Value on Component 'C3' - 'Value'. - Schem v0.1
+Change Value on Component 'C4' - 'Value'. - Schem v0.1
+Change Value on Component 'C5' - 'Value'. - Schem v0.1
+Change Value on Component 'C6' - 'Value'. - Schem v0.1
+Change Value on Component 'C7' - 'Value'. - Schem v0.1
+Change Value on Component 'C8' - 'Value'. - Schem v0.1
+Change Value on Component 'C8' - 'Value'. - Schem v0.1
+Change Value on Component 'C8' - 'Value'. - Schem v0.1
+Change Value on Component 'C9' - 'Value'. - Schem v0.1
+Change Value on Component 'C10' - 'Value'. - Schem v0.1
+Change Value on Component 'C10' - 'Value'. - Schem v0.1
+Change Value on Component 'C10' - 'Value'. - Schem v0.1
+Change Value on Component 'D1' - 'Value'. - Schem v0.1
+Change Value on Component 'C11' - 'Value'. - Schem v0.1
+Change Value on Component 'C12' - 'Value'. - Schem v0.1
+Change Value on Component 'C13' - 'Value'. - Schem v0.1
+Change Value on Component 'C13' - 'Value'. - Schem v0.1
+Change Value on Component 'C13' - 'Value'. - Schem v0.1
+Change Value on Component 'C14' - 'Value'. - Schem v0.1
+Change Value on Component 'C14' - 'Value'. - Schem v0.1
+Change Value on Component 'C14' - 'Value'. - Schem v0.1
+Change Value on Component 'C15' - 'Value'. - Schem v0.1
+Change Value on Component 'C15' - 'Value'. - Schem v0.1
+Change Value on Component 'C15' - 'Value'. - Schem v0.1
+Change Value on Component 'C16' - 'Value'. - Schem v0.1
+Change Value on Component 'C16' - 'Value'. - Schem v0.1
+Change Value on Component 'C16' - 'Value'. - Schem v0.1
+Change Value on Component 'C17' - 'Value'. - Schem v0.1
+Change Value on Component 'C17' - 'Value'. - Schem v0.1
+Change Value on Component 'C17' - 'Value'. - Schem v0.1
+Change Value on Component 'GB1' - 'Allied_Number'. - Schem v0.1
+Change Value on Component 'GB1' - 'Value'. - Schem v0.1
+Change Value on Component 'R3' - 'Value'. - Schem v0.1
+Change Value on Component 'R3' - 'Value'. - Schem v0.1
+Change Value on Component 'R3' - 'Value'. - Schem v0.1
+Change Value on Component 'D2' - 'Value'. - Schem v0.1
+Change Value on Component 'D3' - 'Value'. - Schem v0.1
+Change Value on Component 'C18' - 'Value'. - Schem v0.1
+Change Value on Component 'C18' - 'Value'. - Schem v0.1
+Change Value on Component 'C18' - 'Value'. - Schem v0.1
+Change Value on Component 'C19' - 'Value'. - Schem v0.1
+Change Value on Component 'C19' - 'Value'. - Schem v0.1
+Change Value on Component 'C19' - 'Value'. - Schem v0.1
+Change Value on Component 'R4' - 'Value'. - Schem v0.1
+Change Value on Component 'R5' - 'Value'. - Schem v0.1
+Change Value on Component 'R6' - 'Value'. - Schem v0.1
+Change Value on Component 'R7' - 'Value'. - Schem v0.1
+Change Value on Component 'R8' - 'Value'. - Schem v0.1
+Change Value on Component 'R8' - 'Value'. - Schem v0.1
+Change Value on Component 'R8' - 'Value'. - Schem v0.1
+Change Value on Component 'R9' - 'Value'. - Schem v0.1
+Change Value on Component 'R9' - 'Value'. - Schem v0.1
+Change Value on Component 'R9' - 'Value'. - Schem v0.1
+Change Value on Component 'R10' - 'Value'. - Schem v0.1
+Change Value on Component 'R10' - 'Value'. - Schem v0.1
+Change Value on Component 'R10' - 'Value'. - Schem v0.1
+Change Value on Component 'ZD1' - 'Value'. - Schem v0.1
+Change Value on Component 'R11' - 'Value'. - Schem v0.1
+Change Value on Component 'R12' - 'Value'. - Schem v0.1
+Change Value on Component 'R13' - 'Value'. - Schem v0.1
+Change Value on Component 'R14' - 'Value'. - Schem v0.1
+Change Value on Component 'LED1' - 'Value'. - Schem v0.1
+Change Value on Component 'LED2' - 'Value'. - Schem v0.1
+Change Value on Component 'LED3' - 'Value'. - Schem v0.1
+Change Value on Component 'LED4' - 'Value'. - Schem v0.1
+Change Value on Component 'LED5' - 'Value'. - Schem v0.1
+Change Value on Component 'C20' - 'Value'. - Schem v0.1
+Change Value on Component 'C21' - 'Value'. - Schem v0.1
+Change Value on Component 'R2' - 'Value'. - Schem v0.1
+Change Value on Component 'R15' - 'Value'. - Schem v0.1
+
+
+End Of Report.

@@ -1,0 +1,19 @@
+Schematic and PCB Check Report
+------------------------------
+
+Report File    : D:\GitHub\RGB\Hardware\Board (PCB - Schematic and PCB Check Report).txt
+Report Written : Thursday, November 14, 2013
+Project Path   : D:\GitHub\RGB\Hardware\Board.prj
+Design Path    : D:\GitHub\RGB\Hardware\Board.pcb
+Design Title   : 
+Created        : 14.11.2013 15:06:31
+Last Saved     : 14.11.2013 15:28:33
+Editing Time   : 22 min
+Units          : mm (precision 2)
+
+
+Checking integrity of Schematic and Pcb designs in project "Board"
+==================================================================
+
+
+End Of Report.

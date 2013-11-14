@@ -1,5 +1,5 @@
 [DebugChecksum]
-Checksum=900956098
+Checksum=-1435600805
 [Stack]
 FillEnabled=0
 OverflowWarningsEnabled=1
@@ -59,6 +59,13 @@ UseTrigger=1
 TriggerName=main
 LimitSize=0
 ByteLimit=50
+[array_types]
+Fmt0=unsigned char[8]	4	0
+Fmt1=unsigned int[1]	4	0
+Fmt2=unsigned int[8]	4	0
+Fmt3=unsigned short[8]	4	0
+[watch_formats]
+Fmt0={W}42:ADC_Array	4	4
 [DataSample]
 LogEnabled=0
 GraphEnabled=0
