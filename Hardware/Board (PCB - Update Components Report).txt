@@ -1,0 +1,173 @@
+Update Components Report
+------------------------
+
+Report File    : D:\GitHub\RGB\Hardware\Board (PCB - Update Components Report).txt
+Report Written : Saturday, March 22, 2014
+Project Path   : D:\GitHub\RGB\Hardware\Board.prj
+Design Path    : D:\GitHub\RGB\Hardware\Board.pcb
+Design Title   : 
+Created        : 14.11.2013 15:06:31
+Last Saved     : 22.03.2014 9:40:47
+Editing Time   : 4581 min
+Units          : mm (precision 2)
+
+
+Library Files:
+==============
+
+D:\DesignSpark PCB 6.0\Library\User\1My.cml
+D:\DesignSpark PCB 6.0\Library\User\FTDI.cml
+D:\DesignSpark PCB 6.0\Library\User\User.cml
+D:\DesignSpark PCB 6.0\Library\Default\DesignSpark.cml
+D:\DesignSpark PCB 6.0\Library\Default\ltspice.cml
+D:\DesignSpark PCB 6.0\Library\Default\XSpice.cml
+D:\DesignSpark PCB 6.0\Library\3m.cml
+D:\DesignSpark PCB 6.0\Library\74hc.cml
+D:\DesignSpark PCB 6.0\Library\74hct.cml
+D:\DesignSpark PCB 6.0\Library\74ls.cml
+D:\DesignSpark PCB 6.0\Library\4000.cml
+D:\DesignSpark PCB 6.0\Library\actel.cml
+D:\DesignSpark PCB 6.0\Library\ad.cml
+D:\DesignSpark PCB 6.0\Library\adsp.cml
+D:\DesignSpark PCB 6.0\Library\altera.cml
+D:\DesignSpark PCB 6.0\Library\alteracyclone.cml
+D:\DesignSpark PCB 6.0\Library\amp.cml
+D:\DesignSpark PCB 6.0\Library\atmel.cml
+D:\DesignSpark PCB 6.0\Library\atmel8051.cml
+D:\DesignSpark PCB 6.0\Library\atmelarm.cml
+D:\DesignSpark PCB 6.0\Library\atmelatsam7.cml
+D:\DesignSpark PCB 6.0\Library\atmelavr.cml
+D:\DesignSpark PCB 6.0\Library\avx.cml
+D:\DesignSpark PCB 6.0\Library\capacitor.cml
+D:\DesignSpark PCB 6.0\Library\coldfire.cml
+D:\DesignSpark PCB 6.0\Library\connector.cml
+D:\DesignSpark PCB 6.0\Library\csm.cml
+D:\DesignSpark PCB 6.0\Library\cypress.cml
+D:\DesignSpark PCB 6.0\Library\diode.cml
+D:\DesignSpark PCB 6.0\Library\discrete.cml
+D:\DesignSpark PCB 6.0\Library\dsm.cml
+D:\DesignSpark PCB 6.0\Library\fairchild.cml
+D:\DesignSpark PCB 6.0\Library\fairchild1.cml
+D:\DesignSpark PCB 6.0\Library\fairchildacex.cml
+D:\DesignSpark PCB 6.0\Library\fci.cml
+D:\DesignSpark PCB 6.0\Library\fuse.cml
+D:\DesignSpark PCB 6.0\Library\hamlin.cml
+D:\DesignSpark PCB 6.0\Library\hybrid.cml
+D:\DesignSpark PCB 6.0\Library\infineontc116x.cml
+D:\DesignSpark PCB 6.0\Library\intel8051.cml
+D:\DesignSpark PCB 6.0\Library\ir.cml
+D:\DesignSpark PCB 6.0\Library\lattice.cml
+D:\DesignSpark PCB 6.0\Library\lt.cml
+D:\DesignSpark PCB 6.0\Library\ltspice.cml
+D:\DesignSpark PCB 6.0\Library\luminarycortex.cml
+D:\DesignSpark PCB 6.0\Library\maxim.cml
+D:\DesignSpark PCB 6.0\Library\maxim8051.cml
+D:\DesignSpark PCB 6.0\Library\maximmp.cml
+D:\DesignSpark PCB 6.0\Library\mc68hc.cml
+D:\DesignSpark PCB 6.0\Library\microchip.cml
+D:\DesignSpark PCB 6.0\Library\microchippic.cml
+D:\DesignSpark PCB 6.0\Library\molex.cml
+D:\DesignSpark PCB 6.0\Library\msp430.cml
+D:\DesignSpark PCB 6.0\Library\murata.cml
+D:\DesignSpark PCB 6.0\Library\natsemi.cml
+D:\DesignSpark PCB 6.0\Library\nxp-lpc32x0.cml
+D:\DesignSpark PCB 6.0\Library\omron.cml
+D:\DesignSpark PCB 6.0\Library\onsemi.cml
+D:\DesignSpark PCB 6.0\Library\opamps.cml
+D:\DesignSpark PCB 6.0\Library\pcb.cml
+D:\DesignSpark PCB 6.0\Library\philips80c51.cml
+D:\DesignSpark PCB 6.0\Library\philipsarm.cml
+D:\DesignSpark PCB 6.0\Library\philipsp89.cml
+D:\DesignSpark PCB 6.0\Library\philipsxa.cml
+D:\DesignSpark PCB 6.0\Library\picaxe.cml
+D:\DesignSpark PCB 6.0\Library\powerpc.cml
+D:\DesignSpark PCB 6.0\Library\qbsm.cml
+D:\DesignSpark PCB 6.0\Library\qcsm.cml
+D:\DesignSpark PCB 6.0\Library\qsm.cml
+D:\DesignSpark PCB 6.0\Library\quicklogic.cml
+D:\DesignSpark PCB 6.0\Library\relay.cml
+D:\DesignSpark PCB 6.0\Library\renesasr8c.cml
+D:\DesignSpark PCB 6.0\Library\resistor.cml
+D:\DesignSpark PCB 6.0\Library\rfmicro.cml
+D:\DesignSpark PCB 6.0\Library\schema.cml
+D:\DesignSpark PCB 6.0\Library\sm.cml
+D:\DesignSpark PCB 6.0\Library\sonycx.cml
+D:\DesignSpark PCB 6.0\Library\st-arm7.cml
+D:\DesignSpark PCB 6.0\Library\st.cml
+D:\DesignSpark PCB 6.0\Library\testpoint.cml
+D:\DesignSpark PCB 6.0\Library\ti.cml
+D:\DesignSpark PCB 6.0\Library\tms320.cml
+D:\DesignSpark PCB 6.0\Library\tms470.cml
+D:\DesignSpark PCB 6.0\Library\toshibatmp86.cml
+D:\DesignSpark PCB 6.0\Library\trans.cml
+D:\DesignSpark PCB 6.0\Library\transistor.cml
+D:\DesignSpark PCB 6.0\Library\vishay.cml
+D:\DesignSpark PCB 6.0\Library\xilinx.cml
+D:\DesignSpark PCB 6.0\Library\zilog.cml
+
+Selected items to be updated:
+=============================
+
+
+Components:
+===========
+
+    (None) 
+
+Symbols:
+========
+
+    (None) 
+
+Additional items to be updated:
+===============================
+
+
+Components:
+===========
+
+    (None) 
+
+Symbols:
+========
+
+    (None) 
+
+Selected items not to be updated  (Same version as library)
+===========================================================
+
+
+Components:
+===========
+
+ADP2291  D:\DesignSpark PCB 6.0\Library\User\1My.cml
+
+Symbols:
+========
+
+MSOP8_MC  D:\DesignSpark PCB 6.0\Library\User\MyElement.psl
+
+
+
+Update Components Summary
+=========================
+
+Updating single component.
+Update component values
+Update component value positions
+(Remove pad style exceptions on updated components)
+
+	Selected for update:			   1  Component 
+						   1  Symbol 
+
+	Selected items to be updated:		   0  Components
+						   0  Symbols
+
+	Additional items to be updated:		   0  Components
+						   0  Symbols
+
+	Selected items NOT to be updated:	   1  Component 
+	  (Same version as library)		   1  Symbol 
+
+
+End Of Report.

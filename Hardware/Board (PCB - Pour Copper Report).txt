@@ -1,0 +1,27 @@
+Pour Copper Report
+------------------
+
+Report File    : D:\GitHub\RGB\Hardware\Board (PCB - Pour Copper Report).txt
+Report Written : Monday, March 24, 2014
+Project Path   : D:\GitHub\RGB\Hardware\Board.prj
+Design Path    : D:\GitHub\RGB\Hardware\Board.pcb
+Design Title   : 
+Created        : 14.11.2013 15:06:31
+Last Saved     : 24.03.2014 19:52:13
+Editing Time   : 5576 min
+Units          : mm (precision 2)
+
+U3.7 at 518.32,537.53 has no thermal spokes
+U3.18 at 511.01,534.93 has no thermal spokes
+U3.21 at 511.01,536.88 has no thermal spokes
+U3.25 at 511.01,539.49 has no thermal spokes
+U3.26 at 511.01,540.13 has no thermal spokes
+Q1.2 at 554.77,519.06 has no thermal spokes
+R7.1 at 545.21,516.57 has no thermal spokes
+Q5.1 at 555.13,515.29 has no thermal spokes
+Q5.3 at 553.34,517.09 has no thermal spokes
+L2b.1 at 543.88,518.79 has no thermal spokes
+Via at 557.66,530.61 has no thermal spokes
+Via at 543.81,514.35 has no thermal spokes
+
+End Of Report.

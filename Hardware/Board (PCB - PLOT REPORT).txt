@@ -1,0 +1,50 @@
+PLOT REPORT
+-----------
+
+Report File    : D:\GitHub\RGB\Hardware\Board (PCB - PLOT REPORT).txt
+Report Written : Tuesday, March 25, 2014
+Project Path   : D:\GitHub\RGB\Hardware\Board.prj
+Design Path    : D:\GitHub\RGB\Hardware\Board.pcb
+Design Title   : 
+Created        : 14.11.2013 15:06:31
+Last Saved     : 24.03.2014 20:09:32
+Editing Time   : 5590 min
+Units          : mm (precision 2)
+
+
+Device Settings
+===============
+
+
+Windows Settings
+================
+
+    Printer 'Bullzip PDF Printer'
+    Copies: 1
+
+
+Plots Output
+============
+
+    Plot Job: "D:\GitHub\RGB\Hardware\Board.mop"
+
+
+Windows Output
+==============
+
+    Layers:
+    ------------
+    Top Copper
+
+
+
+Windows Output
+==============
+
+    Layers:
+    ---------------
+    Bottom Copper
+
+
+
+End Of Report.
